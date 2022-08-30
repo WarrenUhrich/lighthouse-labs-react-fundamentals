@@ -10,12 +10,15 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <!-- React Library DOM: -->
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Babel (for JSX Compatibility): -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
     <h1>React App</h1>
     <!-- We need an element for our React App to live! -->
     <div id="our-react-container"></div>
-    <script>
+    <!-- <script>
         const domContainerElement = document.getElementById('our-react-container');
 
         // Tell React which element our app should live in.
@@ -33,6 +36,19 @@
         }
 
         reactRoot.render(React.createElement(HelloComponent, null, null));
+    </script> -->
+    <script type="text/babel">
+        const domContainerElement = document.getElementById('our-react-container');
+
+        // Tell React which element our app should live in.
+        const reactRoot = ReactDOM.createRoot(domContainerElement);
+
+        // Our component looks a little different...
+        function HelloComponent() {
+            return <p>Hello, World! {3 + 3}</p>;
+        }
+
+        reactRoot.render(HelloComponent());
     </script>
 </body>
 </html>
