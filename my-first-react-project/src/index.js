@@ -5,6 +5,7 @@ import './index.css';
 import Hello from './components/Hello';
 import SayHello from './components/SayHello';
 import Counter from './components/Counter';
+import ToDoList from './components/ToDoList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -12,6 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+    <ToDoList heading="My Brand New Separate List!" />
+    <ToDoList />
     <Counter />
     <SayHello name="Hope" />
     <SayHello greeting="Howdy, " name="Ed" />
