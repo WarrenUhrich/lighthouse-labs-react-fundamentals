@@ -21,4 +21,4 @@ class HelloComponent extends React.Component {
 }
 
 // Please render the component in the web page...
-reactRoot.render(HelloComponent);
+reactRoot.render(React.createElement(HelloComponent, null, null));
