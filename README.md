@@ -1,6 +1,6 @@
 # Lighthouse Labs | React Developer Workflow
 
-* [ ] React—what is it, and why use it?
+* [ ] React
 * [ ] JSX (JavaScript XML)
 * [ ] Components
 * [ ] Props
