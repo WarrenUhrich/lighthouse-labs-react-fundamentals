@@ -1,0 +1,9 @@
+.dark, .dark * {
+    color: #eee;
+    background: #333;
+}
+
+.light, .light * {
+    color: #333;
+    background: #eee;
+}
